@@ -56,10 +56,13 @@ h1.logo{
   padding:12px;
   margin:2px;
   color:white;
+  transition: all;
+  transition-duration:1s;
+  transition-timing-function: ease-in-out;
 } 
 #navbar a:hover,#showcase-content a:hover{
-  background-color:#76FF03;
-  border-radius: 5px;
+  background-color:rgba(118,255,3,0.7);
+  border-radius:5px;
 }
 #showcase{
   background:url('../img/showcase.jpg') no-repeat center center/cover;
@@ -81,9 +84,11 @@ h1.logo{
 #showcase-content a{
   color:white;
   background-color: #93cb52;
-  border-radius:5px;
   font-size:20px;
   padding:8px 32px;
+  transition: all;
+  transition-duration:1s;
+  transition-timing-function: ease-in-out;
 }
 
 #container{
@@ -107,6 +112,13 @@ margin:0px 20px;
   padding:1rem;
   border-radius:50%;
   margin-bottom:1rem;
+  transition: all;
+  transition-duration:1s;
+  transition-timing-function: ease-in-out;
+}
+#content-1 .item i:hover{
+  transform: rotate(360deg);
+  padding:1.3rem;
 }
 #content-2{
   display: flex;  
@@ -150,9 +162,13 @@ margin:0px 20px;
   width:60%;
   display:block;
   margin:auto;
+  transition: all;
+  transition-duration:1s;
+  transition-timing-function: ease-in-out;
 }
-#content-4{
-  background-color:#93cb52;
+#client-image .clients img:hover{
+  transform: rotate(360deg);
+  width:65%;
 }
 #contact{
   width:400px;
@@ -170,6 +186,11 @@ margin:0px 20px;
   width:100%;
   display:block;
   padding:8px 4px;
+}
+#form-info label::after{
+  content:'*';
+  color:red;
+  margin-left:5px;
 }
 .btn{
   width:100%;
